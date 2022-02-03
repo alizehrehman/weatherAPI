@@ -2,4 +2,4 @@ let formatWeatherData = (rawData) => {
 
 }
 
-module.exports = formatWeatherData;
+module.exports = {formatWeatherData};

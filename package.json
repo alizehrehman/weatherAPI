@@ -1,0 +1,25 @@
+{
+  "name": "weatherapi",
+  "version": "1.0.0",
+  "description": "API that takes in a zip-code and returns a JSON response with data about the weather in that zipcode",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "nodemon server/index.js",
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alizehrehman/weatherAPI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alizehrehman/weatherAPI/issues"
+  },
+  "homepage": "https://github.com/alizehrehman/weatherAPI#readme",
+  "devDependencies": {
+    "axios": "^0.25.0",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}

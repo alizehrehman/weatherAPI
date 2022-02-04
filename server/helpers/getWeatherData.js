@@ -1,17 +1,19 @@
 const axios = require('axios');
+const { formatWeatherData } = require('./formatWeatherData.js');
 require('dotenv').config();
 const API_KEY = process.env.API_KEY;
 
 let getWeatherData = (zipcode) => {
-    axios.get(`http://api.openweathermap.org/data/2.5/weather?zip=${zipcode}&appid=${API_KEY}`)
+    return axios.get(`http://api.openweathermap.org/data/2.5/weather?zip=${zipcode}&appid=${API_KEY}`)
         //TODO: add ability to include country code if not in US?
         .then(rawData => {
-            console.log(rawData.data);
-            return rawData;
+            return formatWeatherData(rawData.data);
+        })
+        .then(formattedData => {
+            return formattedData;
         })
         .catch(error => {
-            console.log(error);
-            // TODO: handle error handling
+            throw error;
         })
     
 }

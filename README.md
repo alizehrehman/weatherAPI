@@ -55,5 +55,9 @@ I used a ```.env``` file to save sensitive variables that are used by our applic
 
 Create an account at https://openweathermap.org/. You can access your API key under your account by clicking ```API keys```. Copy this API key into your ```.env``` file.
 
+## Testing
+
+* To run test locally using MacOS, run ```npm test```.
+
 ## Created By
 Alizeh Rehman

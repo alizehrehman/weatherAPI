@@ -1,4 +1,4 @@
-const { formatWeatherData } = require('../helpers/formatWeatherData.js');
+const { formatWeatherData } = require('../server/helpers/formatWeatherData.js');
 
 test('formatWeatherData helper throws an error when the rawData is not in the correct shape', () => {
 

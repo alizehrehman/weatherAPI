@@ -51,7 +51,7 @@ Note: make sure you create a ```.env``` file at the project's root directory wit
 
 ## Environment Variables
 
-I used a ```.env``` file to save sensitive variables that are used by our application to make API calls. To use our source code without making modifications, make a copy of the ```.env.example``` file and rename it ```.env``.
+I used a ```.env``` file to save sensitive variables that are used by our application to make API calls. To use our source code without making modifications, make a copy of the ```.env.example``` file and rename it ```.env```.
 
 Create an account at https://openweathermap.org/. You can access your API key under your account by clicking ```API keys```. Copy this API key into your ```.env``` file.
 
